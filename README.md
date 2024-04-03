@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Drum Machine
 
-## Getting Started
+Repositorio con el código solución al proyecto requisito número 3 para obtener la certificación **Front End Development Libraries**.
 
-First, run the development server:
+## Tabla de Contenidos
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Project Drum Machine](#project-drum-machine)
+  - [Tabla de Contenidos](#tabla-de-contenidos)
+  - [Librerias Utilizadas](#librerias-utilizadas)
+  - [Requisitos](#requisitos)
+  - [Screenshots](#screenshots)
+    - [Proyecto cumple con todos los requsitos](#proyecto-cumple-con-todos-los-requsitos)
+    - [Drum Machine On](#drum-machine-on)
+    - [Drum Machine Off](#drum-machine-off)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Librerias Utilizadas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| Tecnologías Utilizadas |
+| ---------------------- |
+| Nextjs 12              |
+| React 17               |
+| ReactDom 17            |
+| Typewriter-effect      |
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Requisitos
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Requisitos](./screenshots/requisitos.webp)
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+### Proyecto cumple con todos los requsitos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Requisitos Cumplidos](./screenshots/proyecto_aprobado.webp)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Drum Machine On
 
-## Deploy on Vercel
+![Drum Machine On](./screenshots/proyecto_on.webp)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Drum Machine Off
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Drum Machine Off](./screenshots/proyecto_off.webp)

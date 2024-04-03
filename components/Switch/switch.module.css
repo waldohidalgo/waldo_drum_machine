@@ -1,0 +1,29 @@
+.toggle-switch {
+  outline: 2px solid black;
+  margin-inline: auto;
+  width: 60px;
+  height: 30px;
+  background-color: rgb(43, 255, 0);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.switch {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  outline: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.toggle-switch.active {
+  background-color: black;
+}
+.toggle-switch.active .switch {
+  transform: translateX(30px);
+}

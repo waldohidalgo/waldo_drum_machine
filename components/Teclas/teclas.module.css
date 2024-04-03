@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  height: 60px;
+}
+
+.button a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: grey;
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  border: 2px solid black;
+  width: 80px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+
+  -webkit-box-shadow: 0 10px 0 #3d3434;
+  -moz-box-shadow: 0 10px 0 #3d3434;
+  box-shadow: 0 10px 0px #3d3434;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: grey;
+  border: 2px solid black;
+  -webkit-box-shadow: inset 0 0px;
+  -moz-box-shadow: inset 0 0px;
+  box-shadow: inset 0 0px;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 9px;
+  position: absolute;
+  bottom: -26px;
+  left: -9px;
+
+  background-color: black;
+  border-radius: 5px;
+}

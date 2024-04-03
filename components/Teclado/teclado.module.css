@@ -1,0 +1,12 @@
+.contenedor_botones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #99bbeb;
+  border: 3px solid black;
+  border-bottom: 0;
+  @media screen and (min-width: 530px) {
+    border-bottom: 3px solid black;
+    border-right: 0;
+  }
+}
