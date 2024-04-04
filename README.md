@@ -12,6 +12,7 @@ Repositorio con el código solución al proyecto requisito número 3 para obtene
     - [Proyecto cumple con todos los requsitos](#proyecto-cumple-con-todos-los-requsitos)
     - [Drum Machine On](#drum-machine-on)
     - [Drum Machine Off](#drum-machine-off)
+    - [Drum Machine 100% Responsive](#drum-machine-100-responsive)
 
 ## Librerias Utilizadas
 
@@ -39,3 +40,7 @@ Repositorio con el código solución al proyecto requisito número 3 para obtene
 ### Drum Machine Off
 
 ![Drum Machine Off](./screenshots/proyecto_off.webp)
+
+### Drum Machine 100% Responsive
+
+![Drum Machine 100% Responsive](./screenshots/proyecto_responsivo.webp)
