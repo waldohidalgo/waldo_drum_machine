@@ -47,3 +47,6 @@
   text-decoration: underline;
   text-align: center;
 }
+.active_tecla {
+  top: 10px;
+}

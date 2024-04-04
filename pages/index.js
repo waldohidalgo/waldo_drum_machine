@@ -24,18 +24,39 @@ export default function Home() {
   const [isOn, setIsOn] = React.useState(true);
 
   React.useEffect(() => {
-    const handleKeyPress = (e) => {
+    const handleKeyPressDown = (e) => {
       const teclaPresionada = e.key.toUpperCase();
 
-      if (data.map((e) => e.letra).includes(teclaPresionada) && isOn) {
+      if (data.map((e) => e.letra).includes(teclaPresionada)) {
         const elementoAudioSeleccionado =
           document.getElementById(teclaPresionada);
-        playAudio(elementoAudioSeleccionado);
-        setDisplay(data.find((obj) => teclaPresionada == obj.letra).display);
+        elementoAudioSeleccionado.parentElement
+          .querySelector("a")
+          .classList.add(styles.active_tecla);
+        if (isOn) {
+          playAudio(elementoAudioSeleccionado);
+          setDisplay(data.find((obj) => teclaPresionada == obj.letra).display);
+        }
       }
     };
-    window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
+
+    const handlePressUp = (e) => {
+      const teclaPresionada = e.key.toUpperCase();
+      if (data.map((e) => e.letra).includes(teclaPresionada)) {
+        const elementoAudioSeleccionado =
+          document.getElementById(teclaPresionada);
+
+        elementoAudioSeleccionado.parentElement
+          .querySelector("a")
+          .classList.remove(styles.active_tecla);
+      }
+    };
+    window.addEventListener("keydown", handleKeyPressDown);
+    window.addEventListener("keyup", handlePressUp);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPressDown);
+      window.removeEventListener("keyup", handlePressUp);
+    };
   }, [display, isOn]);
 
   const handleChangeDisplay = (nombreSonido) => {
