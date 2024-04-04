@@ -1,8 +1,9 @@
 .button {
   position: relative;
   display: inline-block;
-  margin: 10px;
+
   height: 60px;
+  width: 100%;
 }
 
 .button a {
@@ -17,7 +18,7 @@
   position: relative;
   padding: 10px 0;
   border: 2px solid black;
-  width: 80px;
+  width: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-shadow: 0px 1px 0px #000;
 

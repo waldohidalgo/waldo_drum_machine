@@ -1,4 +1,6 @@
 .contenedor_botones {
+  padding-top: 1rem;
+  padding-inline: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -8,5 +10,7 @@
   @media screen and (min-width: 530px) {
     border-bottom: 3px solid black;
     border-right: 0;
+    width: 40%;
+    max-width: 305px;
   }
 }
